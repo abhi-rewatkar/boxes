@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    height: 80%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+    background: linear-gradient(to right, #0000ff, #00ffff);
+    border-radius: 20px;
+    animation: slide 5s infinite ease-in-out;
+}
+
+.box-1 {
+    animation-delay: 0s;
+}
+
+.box-2 {
+    animation-delay: 1s;
+}
+
+.box-3 {
+    animation-delay: 2s;
+}
+
+.box-4 {
+    animation-delay: 3s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
